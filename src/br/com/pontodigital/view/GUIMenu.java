@@ -5,17 +5,20 @@
  */
 package br.com.pontodigital.view;
 
+import javax.swing.JInternalFrame;
+
 /**
  *
  * @author Neto
  */
 public class GUIMenu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form GUIMenu
-     */
     public GUIMenu() {
         initComponents();
+        jInternalFrameCadastrarFuncionario.setVisible(false);
+        jInternalFrameCadastrarCargo.setVisible(false);
+        jInternalFrameCadastrarDepartamento.setVisible(false);
+        jInternalFrameCadastrarEscala.setVisible(false);
     }
 
     /**
@@ -27,23 +30,404 @@ public class GUIMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanelPrincipal = new javax.swing.JPanel();
+        jDesktopPanePrincipal = new javax.swing.JDesktopPane();
+        jInternalFrameCadastrarFuncionario = new javax.swing.JInternalFrame();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        jLabel5 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButtonCadastrarFuncionarioCancelar = new javax.swing.JToggleButton();
+        jInternalFrameCadastrarCargo = new javax.swing.JInternalFrame();
+        jLabel7 = new javax.swing.JLabel();
+        jTextFieldCadastrarCargo = new javax.swing.JTextField();
+        jToggleButtonCadastrarCargo = new javax.swing.JToggleButton();
+        jToggleButtonCancelarCadastrarCargo = new javax.swing.JToggleButton();
+        jInternalFrameCadastrarDepartamento = new javax.swing.JInternalFrame();
+        jLabel8 = new javax.swing.JLabel();
+        jTextFieldCadastrarDepartamento = new javax.swing.JTextField();
+        jToggleButtonCadastrarDepartamento = new javax.swing.JToggleButton();
+        jToggleButtonCancelarCadastrarDepartamento = new javax.swing.JToggleButton();
+        jInternalFrameCadastrarEscala = new javax.swing.JInternalFrame();
+        jLabel9 = new javax.swing.JLabel();
+        jTextFieldCadastrarEscala = new javax.swing.JTextField();
+        jToggleButtonCadastrarEscala = new javax.swing.JToggleButton();
+        jToggleButtonCancelarCadastrarEscala = new javax.swing.JToggleButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItemCadastrarFuncionario = new javax.swing.JMenuItem();
+        jMenuItemCadastrarCargo = new javax.swing.JMenuItem();
+        jMenuItemCadastrarDepartamento = new javax.swing.JMenuItem();
+        jMenuItemCadastrarEscala = new javax.swing.JMenuItem();
+        jMenuItemCadastrarTurno = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ponto Digital - Menu");
+
+        jPanelPrincipal.setLayout(null);
+
+        jDesktopPanePrincipal.setBackground(new java.awt.Color(240, 240, 240));
+
+        jInternalFrameCadastrarFuncionario.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Cadastrar Funcionário"));
+        jInternalFrameCadastrarFuncionario.setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        jInternalFrameCadastrarFuncionario.setTitle("Cadastrar Funcionário");
+        jInternalFrameCadastrarFuncionario.setVisible(true);
+        jInternalFrameCadastrarFuncionario.getContentPane().setLayout(null);
+
+        jLabel1.setText("Nome:");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 20, 90, 14);
+
+        jLabel2.setText("Telefone:");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 50, 100, 14);
+
+        jLabel3.setText("Cpf:");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel3);
+        jLabel3.setBounds(10, 80, 80, 14);
+
+        jLabel4.setText("Departamento: ");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel4);
+        jLabel4.setBounds(10, 110, 110, 14);
+
+        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(140, 100, 170, 21);
+
+        jLabel5.setText("Cargo:");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel5);
+        jLabel5.setBounds(10, 140, 80, 14);
+
+        jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jComboBox2);
+        jComboBox2.setBounds(140, 130, 170, 21);
+
+        jLabel6.setText("Data de Admissão: ");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jLabel6);
+        jLabel6.setBounds(10, 170, 120, 14);
+
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jTextField1);
+        jTextField1.setBounds(140, 10, 170, 23);
+
+        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jTextField2);
+        jTextField2.setBounds(140, 40, 170, 21);
+
+        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jTextField3);
+        jTextField3.setBounds(140, 70, 170, 21);
+
+        jTextField4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jTextField4);
+        jTextField4.setBounds(140, 160, 170, 20);
+
+        jToggleButton1.setText("Cadastrar");
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jToggleButton1);
+        jToggleButton1.setBounds(80, 210, 105, 23);
+
+        jToggleButtonCadastrarFuncionarioCancelar.setText("Cancelar");
+        jToggleButtonCadastrarFuncionarioCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonCadastrarFuncionarioCancelarActionPerformed(evt);
+            }
+        });
+        jInternalFrameCadastrarFuncionario.getContentPane().add(jToggleButtonCadastrarFuncionarioCancelar);
+        jToggleButtonCadastrarFuncionarioCancelar.setBounds(210, 210, 105, 23);
+
+        jInternalFrameCadastrarCargo.setTitle("Cadastrar Cargo");
+        jInternalFrameCadastrarCargo.setVisible(true);
+        jInternalFrameCadastrarCargo.getContentPane().setLayout(null);
+
+        jLabel7.setText("Nome do Cargo: ");
+        jInternalFrameCadastrarCargo.getContentPane().add(jLabel7);
+        jLabel7.setBounds(10, 20, 100, 14);
+        jInternalFrameCadastrarCargo.getContentPane().add(jTextFieldCadastrarCargo);
+        jTextFieldCadastrarCargo.setBounds(130, 20, 170, 20);
+
+        jToggleButtonCadastrarCargo.setText("Cadastrar");
+        jInternalFrameCadastrarCargo.getContentPane().add(jToggleButtonCadastrarCargo);
+        jToggleButtonCadastrarCargo.setBounds(80, 70, 105, 23);
+
+        jToggleButtonCancelarCadastrarCargo.setText("Cancelar");
+        jToggleButtonCancelarCadastrarCargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonCancelarCadastrarCargoActionPerformed(evt);
+            }
+        });
+        jInternalFrameCadastrarCargo.getContentPane().add(jToggleButtonCancelarCadastrarCargo);
+        jToggleButtonCancelarCadastrarCargo.setBounds(200, 70, 100, 23);
+
+        jInternalFrameCadastrarDepartamento.setTitle("Cadastrar Departamento");
+        jInternalFrameCadastrarDepartamento.setVisible(true);
+
+        jLabel8.setText("Nome do Cargo: ");
+
+        jToggleButtonCadastrarDepartamento.setText("Cadastrar");
+
+        jToggleButtonCancelarCadastrarDepartamento.setText("Cancelar");
+        jToggleButtonCancelarCadastrarDepartamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonCancelarCadastrarDepartamentoActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jInternalFrameCadastrarDepartamentoLayout = new javax.swing.GroupLayout(jInternalFrameCadastrarDepartamento.getContentPane());
+        jInternalFrameCadastrarDepartamento.getContentPane().setLayout(jInternalFrameCadastrarDepartamentoLayout);
+        jInternalFrameCadastrarDepartamentoLayout.setHorizontalGroup(
+            jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jTextFieldCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jToggleButtonCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(jToggleButtonCancelarCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jInternalFrameCadastrarDepartamentoLayout.setVerticalGroup(
+            jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jTextFieldCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButtonCadastrarDepartamento)
+                    .addComponent(jToggleButtonCancelarCadastrarDepartamento))
+                .addContainerGap(116, Short.MAX_VALUE))
+        );
+
+        jInternalFrameCadastrarEscala.setTitle("Cadastrar Escala");
+        jInternalFrameCadastrarEscala.setVisible(true);
+
+        jLabel9.setText("Nome do Escala: ");
+
+        jToggleButtonCadastrarEscala.setText("Cadastrar");
+
+        jToggleButtonCancelarCadastrarEscala.setText("Cancelar");
+        jToggleButtonCancelarCadastrarEscala.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButtonCancelarCadastrarEscalaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jInternalFrameCadastrarEscalaLayout = new javax.swing.GroupLayout(jInternalFrameCadastrarEscala.getContentPane());
+        jInternalFrameCadastrarEscala.getContentPane().setLayout(jInternalFrameCadastrarEscalaLayout);
+        jInternalFrameCadastrarEscalaLayout.setHorizontalGroup(
+            jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameCadastrarEscalaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jInternalFrameCadastrarEscalaLayout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jTextFieldCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jInternalFrameCadastrarEscalaLayout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jToggleButtonCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15)
+                        .addComponent(jToggleButtonCancelarCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jInternalFrameCadastrarEscalaLayout.setVerticalGroup(
+            jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameCadastrarEscalaLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(jTextFieldCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jToggleButtonCadastrarEscala)
+                    .addComponent(jToggleButtonCancelarCadastrarEscala))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
+        jDesktopPanePrincipal.setLayout(jDesktopPanePrincipalLayout);
+        jDesktopPanePrincipalLayout.setHorizontalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPanePrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jInternalFrameCadastrarDepartamento)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPanePrincipalLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jInternalFrameCadastrarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addComponent(jInternalFrameCadastrarEscala)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jInternalFrameCadastrarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(220, 220, 220))
+        );
+        jDesktopPanePrincipalLayout.setVerticalGroup(
+            jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPanePrincipalLayout.createSequentialGroup()
+                .addContainerGap(153, Short.MAX_VALUE)
+                .addComponent(jInternalFrameCadastrarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(113, 113, 113))
+            .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jInternalFrameCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jInternalFrameCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jInternalFrameCadastrarCargo, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarFuncionario, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarCargo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarDepartamento, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarEscala, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jPanelPrincipal.add(jDesktopPanePrincipal);
+        jDesktopPanePrincipal.setBounds(0, 0, 800, 580);
+
+        jMenu1.setText("Cadastrar");
+
+        jMenuItemCadastrarFuncionario.setText("Funcionário");
+        jMenuItemCadastrarFuncionario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarFuncionarioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItemCadastrarFuncionario);
+
+        jMenuItemCadastrarCargo.setText("Cargo");
+        jMenuItemCadastrarCargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarCargoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItemCadastrarCargo);
+
+        jMenuItemCadastrarDepartamento.setText("Departamento");
+        jMenuItemCadastrarDepartamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarDepartamentoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItemCadastrarDepartamento);
+
+        jMenuItemCadastrarEscala.setText("Escala");
+        jMenuItemCadastrarEscala.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarEscalaActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItemCadastrarEscala);
+
+        jMenuItemCadastrarTurno.setText("Turno");
+        jMenu1.add(jMenuItemCadastrarTurno);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu4.setText("Editar");
+        jMenuBar1.add(jMenu4);
+
+        jMenu3.setText("Desligar");
+
+        jMenuItem9.setText("Funcionário");
+        jMenu3.add(jMenuItem9);
+
+        jMenuBar1.add(jMenu3);
+
+        jMenu2.setText("Relatórios");
+
+        jMenuItem6.setText("Diário");
+        jMenu2.add(jMenuItem6);
+
+        jMenuItem7.setText("Semanal");
+        jMenu2.add(jMenuItem7);
+
+        jMenuItem8.setText("Mensal");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem8);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addComponent(jPanelPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setSize(new java.awt.Dimension(816, 639));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItemCadastrarFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarFuncionarioActionPerformed
+        jInternalFrameCadastrarFuncionario.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadastrarFuncionarioActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jToggleButtonCadastrarFuncionarioCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCadastrarFuncionarioCancelarActionPerformed
+        jInternalFrameCadastrarFuncionario.setVisible(false);
+    }//GEN-LAST:event_jToggleButtonCadastrarFuncionarioCancelarActionPerformed
+
+    private void jToggleButtonCancelarCadastrarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCancelarCadastrarCargoActionPerformed
+        jInternalFrameCadastrarCargo.setVisible(false);
+    }//GEN-LAST:event_jToggleButtonCancelarCadastrarCargoActionPerformed
+
+    private void jMenuItemCadastrarCargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarCargoActionPerformed
+        jInternalFrameCadastrarCargo.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadastrarCargoActionPerformed
+
+    private void jToggleButtonCancelarCadastrarDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCancelarCadastrarDepartamentoActionPerformed
+        jInternalFrameCadastrarDepartamento.setVisible(false);
+    }//GEN-LAST:event_jToggleButtonCancelarCadastrarDepartamentoActionPerformed
+
+    private void jMenuItemCadastrarDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarDepartamentoActionPerformed
+        jInternalFrameCadastrarDepartamento.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadastrarDepartamentoActionPerformed
+
+    private void jToggleButtonCancelarCadastrarEscalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCancelarCadastrarEscalaActionPerformed
+        jInternalFrameCadastrarEscala.setVisible(false);
+    }//GEN-LAST:event_jToggleButtonCancelarCadastrarEscalaActionPerformed
+
+    private void jMenuItemCadastrarEscalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarEscalaActionPerformed
+        jInternalFrameCadastrarEscala.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadastrarEscalaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -81,5 +465,51 @@ public class GUIMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBox2;
+    private javax.swing.JDesktopPane jDesktopPanePrincipal;
+    private javax.swing.JInternalFrame jInternalFrameCadastrarCargo;
+    private javax.swing.JInternalFrame jInternalFrameCadastrarDepartamento;
+    private javax.swing.JInternalFrame jInternalFrameCadastrarEscala;
+    private javax.swing.JInternalFrame jInternalFrameCadastrarFuncionario;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuItem jMenuItemCadastrarCargo;
+    private javax.swing.JMenuItem jMenuItemCadastrarDepartamento;
+    private javax.swing.JMenuItem jMenuItemCadastrarEscala;
+    private javax.swing.JMenuItem jMenuItemCadastrarFuncionario;
+    private javax.swing.JMenuItem jMenuItemCadastrarTurno;
+    private javax.swing.JPanel jPanelPrincipal;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextFieldCadastrarCargo;
+    private javax.swing.JTextField jTextFieldCadastrarDepartamento;
+    private javax.swing.JTextField jTextFieldCadastrarEscala;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButtonCadastrarCargo;
+    private javax.swing.JToggleButton jToggleButtonCadastrarDepartamento;
+    private javax.swing.JToggleButton jToggleButtonCadastrarEscala;
+    private javax.swing.JToggleButton jToggleButtonCadastrarFuncionarioCancelar;
+    private javax.swing.JToggleButton jToggleButtonCancelarCadastrarCargo;
+    private javax.swing.JToggleButton jToggleButtonCancelarCadastrarDepartamento;
+    private javax.swing.JToggleButton jToggleButtonCancelarCadastrarEscala;
     // End of variables declaration//GEN-END:variables
 }
