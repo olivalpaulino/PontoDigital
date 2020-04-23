@@ -19,6 +19,8 @@ public class GUIMenu extends javax.swing.JFrame {
         jInternalFrameCadastrarCategoria.setVisible(false);
         jInternalFrameCadastrarDepartamento.setVisible(false);
         jInternalFrameCadastrarEscala.setVisible(false);
+        jInternalFrameVisualizarCadastro.setVisible(false);
+        jInternalFramePesquisarFuncionario.setVisible(false);
     }
 
     /**
@@ -66,20 +68,40 @@ public class GUIMenu extends javax.swing.JFrame {
         jToggleButtonCancelarCadastrarEscala = new javax.swing.JToggleButton();
         jSpinnerHorasTrabalhadas = new javax.swing.JSpinner();
         jLabel12 = new javax.swing.JLabel();
+        jInternalFrameVisualizarCadastro = new javax.swing.JInternalFrame();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox();
+        jInternalFramePesquisarFuncionario = new javax.swing.JInternalFrame();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jTextFieldPesquisarFuncionarioNome = new javax.swing.JTextField();
+        jTextFieldPesquisarFuncionarioCpf = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jComboBoxPesquisarFuncionarioCategoria = new javax.swing.JComboBox();
+        jButtonPesquisarFuncionarioPesquisar = new javax.swing.JButton();
+        jButtonPesquisarFuncionarioCancelar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItemCadastrarFuncionario = new javax.swing.JMenuItem();
         jMenuItemCadastrarCategoria = new javax.swing.JMenuItem();
         jMenuItemCadastrarDepartamento = new javax.swing.JMenuItem();
         jMenuItemCadastrarEscala = new javax.swing.JMenuItem();
-        jMenuItemCadastrarTurno = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
+        jMenuItemEditarFuncionario = new javax.swing.JMenuItem();
+        jMenuItemEditarCategoria = new javax.swing.JMenuItem();
+        jMenuItemEditarDepartamento = new javax.swing.JMenuItem();
+        jMenuItemEditarEscala = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItemListarFuncionariosGeral = new javax.swing.JMenuItem();
+        jMenuItemListarFuncionariosPorCategoria = new javax.swing.JMenuItem();
+        jMenuItemListarFuncionariosPorDepartamento = new javax.swing.JMenuItem();
+        jMenuItemListarFuncionariosPorIdade = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItemDesligarFuncionario = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItemRelatorioDiario = new javax.swing.JMenuItem();
+        jMenuItemRelatorioSemanal = new javax.swing.JMenuItem();
+        jMenuItemRelatorioMensal = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ponto Digital - Menu");
@@ -211,20 +233,20 @@ public class GUIMenu extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jTextFieldCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addComponent(jToggleButtonCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
-                        .addComponent(jToggleButtonCancelarCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(67, Short.MAX_VALUE))
+                        .addComponent(jToggleButtonCancelarCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jTextFieldCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jInternalFrameCadastrarDepartamentoLayout.setVerticalGroup(
             jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jInternalFrameCadastrarDepartamentoLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(81, 81, 81)
                 .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
                     .addComponent(jTextFieldCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -232,7 +254,7 @@ public class GUIMenu extends javax.swing.JFrame {
                 .addGroup(jInternalFrameCadastrarDepartamentoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jToggleButtonCadastrarDepartamento)
                     .addComponent(jToggleButtonCancelarCadastrarDepartamento))
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
 
         jInternalFrameCadastrarEscala.setTitle("Cadastrar Escala");
@@ -270,7 +292,7 @@ public class GUIMenu extends javax.swing.JFrame {
                         .addComponent(jToggleButtonCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15)
                         .addComponent(jToggleButtonCancelarCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jInternalFrameCadastrarEscalaLayout.setVerticalGroup(
             jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -287,7 +309,99 @@ public class GUIMenu extends javax.swing.JFrame {
                 .addGroup(jInternalFrameCadastrarEscalaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jToggleButtonCadastrarEscala)
                     .addComponent(jToggleButtonCancelarCadastrarEscala))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(163, Short.MAX_VALUE))
+        );
+
+        jInternalFrameVisualizarCadastro.setVisible(true);
+
+        jLabel10.setText("Selecione o tipo de Cadastro: ");
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        javax.swing.GroupLayout jInternalFrameVisualizarCadastroLayout = new javax.swing.GroupLayout(jInternalFrameVisualizarCadastro.getContentPane());
+        jInternalFrameVisualizarCadastro.getContentPane().setLayout(jInternalFrameVisualizarCadastroLayout);
+        jInternalFrameVisualizarCadastroLayout.setHorizontalGroup(
+            jInternalFrameVisualizarCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameVisualizarCadastroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(157, Short.MAX_VALUE))
+        );
+        jInternalFrameVisualizarCadastroLayout.setVerticalGroup(
+            jInternalFrameVisualizarCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrameVisualizarCadastroLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFrameVisualizarCadastroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(277, Short.MAX_VALUE))
+        );
+
+        jInternalFramePesquisarFuncionario.setTitle("Pesquisar Funcionário");
+        jInternalFramePesquisarFuncionario.setVisible(true);
+
+        jLabel13.setText("Nome:    ");
+
+        jLabel14.setText("Cpf:       ");
+
+        jLabel15.setText("Categoria:    ");
+
+        jComboBoxPesquisarFuncionarioCategoria.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jButtonPesquisarFuncionarioPesquisar.setText("Pesquisar");
+
+        jButtonPesquisarFuncionarioCancelar.setText("Cancelar");
+        jButtonPesquisarFuncionarioCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPesquisarFuncionarioCancelarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jInternalFramePesquisarFuncionarioLayout = new javax.swing.GroupLayout(jInternalFramePesquisarFuncionario.getContentPane());
+        jInternalFramePesquisarFuncionario.getContentPane().setLayout(jInternalFramePesquisarFuncionarioLayout);
+        jInternalFramePesquisarFuncionarioLayout.setHorizontalGroup(
+            jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFramePesquisarFuncionarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextFieldPesquisarFuncionarioNome)
+                    .addComponent(jTextFieldPesquisarFuncionarioCpf)
+                    .addComponent(jComboBoxPesquisarFuncionarioCategoria, 0, 199, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFramePesquisarFuncionarioLayout.createSequentialGroup()
+                .addContainerGap(121, Short.MAX_VALUE)
+                .addComponent(jButtonPesquisarFuncionarioPesquisar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonPesquisarFuncionarioCancelar)
+                .addGap(11, 11, 11))
+        );
+        jInternalFramePesquisarFuncionarioLayout.setVerticalGroup(
+            jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFramePesquisarFuncionarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jTextFieldPesquisarFuncionarioNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jTextFieldPesquisarFuncionarioCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15)
+                    .addComponent(jComboBoxPesquisarFuncionarioCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addGroup(jInternalFramePesquisarFuncionarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonPesquisarFuncionarioPesquisar)
+                    .addComponent(jButtonPesquisarFuncionarioCancelar))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jDesktopPanePrincipalLayout = new javax.swing.GroupLayout(jDesktopPanePrincipal);
@@ -306,26 +420,41 @@ public class GUIMenu extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jInternalFrameCadastrarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(220, 220, 220))
+            .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jInternalFramePesquisarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jInternalFrameVisualizarCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDesktopPanePrincipalLayout.setVerticalGroup(
             jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPanePrincipalLayout.createSequentialGroup()
-                .addContainerGap(174, Short.MAX_VALUE)
-                .addComponent(jInternalFrameCadastrarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(113, 113, 113))
             .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jInternalFrameCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jInternalFrameCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jInternalFrameVisualizarCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jInternalFramePesquisarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jInternalFrameCadastrarCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
+                        .addGroup(jDesktopPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jInternalFrameCadastrarDepartamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jInternalFrameCadastrarEscala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jInternalFrameCadastrarCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jDesktopPanePrincipalLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jInternalFrameCadastrarFuncionario, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(113, 113, 113))))
         );
         jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarFuncionario, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarCategoria, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarDepartamento, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPanePrincipal.setLayer(jInternalFrameCadastrarEscala, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPanePrincipal.setLayer(jInternalFrameVisualizarCadastro, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPanePrincipal.setLayer(jInternalFramePesquisarFuncionario, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jPanelPrincipal.add(jDesktopPanePrincipal);
         jDesktopPanePrincipal.setBounds(0, 0, 800, 580);
@@ -364,36 +493,72 @@ public class GUIMenu extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItemCadastrarEscala);
 
-        jMenuItemCadastrarTurno.setText("Turno");
-        jMenu1.add(jMenuItemCadastrarTurno);
-
         jMenuBar1.add(jMenu1);
 
         jMenu4.setText("Editar");
+
+        jMenuItemEditarFuncionario.setText("Funcionário");
+        jMenuItemEditarFuncionario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemEditarFuncionarioActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItemEditarFuncionario);
+
+        jMenuItemEditarCategoria.setText("Categoria");
+        jMenu4.add(jMenuItemEditarCategoria);
+
+        jMenuItemEditarDepartamento.setText("Departamento");
+        jMenu4.add(jMenuItemEditarDepartamento);
+
+        jMenuItemEditarEscala.setText("Escala");
+        jMenu4.add(jMenuItemEditarEscala);
+
         jMenuBar1.add(jMenu4);
+
+        jMenu5.setText("Visualizar");
+
+        jMenuItemListarFuncionariosGeral.setText("Listar Funcionários Geral");
+        jMenuItemListarFuncionariosGeral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemListarFuncionariosGeralActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItemListarFuncionariosGeral);
+
+        jMenuItemListarFuncionariosPorCategoria.setText("Listar Funcionários por Categoria");
+        jMenu5.add(jMenuItemListarFuncionariosPorCategoria);
+
+        jMenuItemListarFuncionariosPorDepartamento.setText("Listar Funcionários por Departamento");
+        jMenu5.add(jMenuItemListarFuncionariosPorDepartamento);
+
+        jMenuItemListarFuncionariosPorIdade.setText("Listar Funcionários por Idade");
+        jMenu5.add(jMenuItemListarFuncionariosPorIdade);
+
+        jMenuBar1.add(jMenu5);
 
         jMenu3.setText("Desligar");
 
-        jMenuItem9.setText("Funcionário");
-        jMenu3.add(jMenuItem9);
+        jMenuItemDesligarFuncionario.setText("Funcionário");
+        jMenu3.add(jMenuItemDesligarFuncionario);
 
         jMenuBar1.add(jMenu3);
 
         jMenu2.setText("Relatórios");
 
-        jMenuItem6.setText("Diário");
-        jMenu2.add(jMenuItem6);
+        jMenuItemRelatorioDiario.setText("Diário");
+        jMenu2.add(jMenuItemRelatorioDiario);
 
-        jMenuItem7.setText("Semanal");
-        jMenu2.add(jMenuItem7);
+        jMenuItemRelatorioSemanal.setText("Semanal");
+        jMenu2.add(jMenuItemRelatorioSemanal);
 
-        jMenuItem8.setText("Mensal");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemRelatorioMensal.setText("Mensal");
+        jMenuItemRelatorioMensal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                jMenuItemRelatorioMensalActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem8);
+        jMenu2.add(jMenuItemRelatorioMensal);
 
         jMenuBar1.add(jMenu2);
 
@@ -416,11 +581,14 @@ public class GUIMenu extends javax.swing.JFrame {
 
     private void jMenuItemCadastrarFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarFuncionarioActionPerformed
         jInternalFrameCadastrarFuncionario.setVisible(true);
+        jInternalFrameCadastrarCategoria.setVisible(false);
+        jInternalFrameCadastrarDepartamento.setVisible(false);
+        jInternalFrameCadastrarEscala.setVisible(false);
     }//GEN-LAST:event_jMenuItemCadastrarFuncionarioActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void jMenuItemRelatorioMensalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRelatorioMensalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+    }//GEN-LAST:event_jMenuItemRelatorioMensalActionPerformed
 
     private void jToggleButtonCadastrarFuncionarioCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCadastrarFuncionarioCancelarActionPerformed
         jInternalFrameCadastrarFuncionario.setVisible(false);
@@ -432,6 +600,9 @@ public class GUIMenu extends javax.swing.JFrame {
 
     private void jMenuItemCadastrarCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarCategoriaActionPerformed
         jInternalFrameCadastrarCategoria.setVisible(true);
+        jInternalFrameCadastrarDepartamento.setVisible(false);
+        jInternalFrameCadastrarEscala.setVisible(false);
+        jInternalFrameCadastrarFuncionario.setVisible(false);
     }//GEN-LAST:event_jMenuItemCadastrarCategoriaActionPerformed
 
     private void jToggleButtonCancelarCadastrarDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCancelarCadastrarDepartamentoActionPerformed
@@ -440,6 +611,9 @@ public class GUIMenu extends javax.swing.JFrame {
 
     private void jMenuItemCadastrarDepartamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarDepartamentoActionPerformed
         jInternalFrameCadastrarDepartamento.setVisible(true);
+        jInternalFrameCadastrarCategoria.setVisible(false);
+        jInternalFrameCadastrarEscala.setVisible(false);
+        jInternalFrameCadastrarFuncionario.setVisible(false);
     }//GEN-LAST:event_jMenuItemCadastrarDepartamentoActionPerformed
 
     private void jToggleButtonCancelarCadastrarEscalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonCancelarCadastrarEscalaActionPerformed
@@ -448,7 +622,22 @@ public class GUIMenu extends javax.swing.JFrame {
 
     private void jMenuItemCadastrarEscalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarEscalaActionPerformed
         jInternalFrameCadastrarEscala.setVisible(true);
+        jInternalFrameCadastrarFuncionario.setVisible(false);
+        jInternalFrameCadastrarDepartamento.setVisible(false);
+        jInternalFrameCadastrarCategoria.setVisible(false);
     }//GEN-LAST:event_jMenuItemCadastrarEscalaActionPerformed
+
+    private void jMenuItemListarFuncionariosGeralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemListarFuncionariosGeralActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemListarFuncionariosGeralActionPerformed
+
+    private void jMenuItemEditarFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEditarFuncionarioActionPerformed
+        
+    }//GEN-LAST:event_jMenuItemEditarFuncionarioActionPerformed
+
+    private void jButtonPesquisarFuncionarioCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPesquisarFuncionarioCancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonPesquisarFuncionarioCancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -482,17 +671,27 @@ public class GUIMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonPesquisarFuncionarioCancelar;
+    private javax.swing.JButton jButtonPesquisarFuncionarioPesquisar;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JComboBox jComboBox3;
+    private javax.swing.JComboBox jComboBox4;
+    private javax.swing.JComboBox jComboBoxPesquisarFuncionarioCategoria;
     private javax.swing.JDesktopPane jDesktopPanePrincipal;
     private javax.swing.JInternalFrame jInternalFrameCadastrarCategoria;
     private javax.swing.JInternalFrame jInternalFrameCadastrarDepartamento;
     private javax.swing.JInternalFrame jInternalFrameCadastrarEscala;
     private javax.swing.JInternalFrame jInternalFrameCadastrarFuncionario;
+    private javax.swing.JInternalFrame jInternalFramePesquisarFuncionario;
+    private javax.swing.JInternalFrame jInternalFrameVisualizarCadastro;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -505,16 +704,24 @@ public class GUIMenu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuItem jMenuItemCadastrarCategoria;
     private javax.swing.JMenuItem jMenuItemCadastrarDepartamento;
     private javax.swing.JMenuItem jMenuItemCadastrarEscala;
     private javax.swing.JMenuItem jMenuItemCadastrarFuncionario;
-    private javax.swing.JMenuItem jMenuItemCadastrarTurno;
+    private javax.swing.JMenuItem jMenuItemDesligarFuncionario;
+    private javax.swing.JMenuItem jMenuItemEditarCategoria;
+    private javax.swing.JMenuItem jMenuItemEditarDepartamento;
+    private javax.swing.JMenuItem jMenuItemEditarEscala;
+    private javax.swing.JMenuItem jMenuItemEditarFuncionario;
+    private javax.swing.JMenuItem jMenuItemListarFuncionariosGeral;
+    private javax.swing.JMenuItem jMenuItemListarFuncionariosPorCategoria;
+    private javax.swing.JMenuItem jMenuItemListarFuncionariosPorDepartamento;
+    private javax.swing.JMenuItem jMenuItemListarFuncionariosPorIdade;
+    private javax.swing.JMenuItem jMenuItemRelatorioDiario;
+    private javax.swing.JMenuItem jMenuItemRelatorioMensal;
+    private javax.swing.JMenuItem jMenuItemRelatorioSemanal;
     private javax.swing.JPanel jPanelPrincipal;
     private javax.swing.JSpinner jSpinnerHorasTrabalhadas;
     private javax.swing.JTextField jTextField1;
@@ -524,6 +731,8 @@ public class GUIMenu extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldCadastrarCargo;
     private javax.swing.JTextField jTextFieldCadastrarDepartamento;
     private javax.swing.JTextField jTextFieldCadastrarEscala;
+    private javax.swing.JTextField jTextFieldPesquisarFuncionarioCpf;
+    private javax.swing.JTextField jTextFieldPesquisarFuncionarioNome;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButtonCadastrarCategoria;
     private javax.swing.JToggleButton jToggleButtonCadastrarDepartamento;
